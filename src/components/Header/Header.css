@@ -1,0 +1,96 @@
+/* Header.css */
+.header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/header.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li img.logo {
+    width: 150px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #f5a623;
+}
+
+.btn-book {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-book:hover {
+    background-color: #0056b3;
+}
+
+/* Title Container */
+.title-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav ul li img.logo {
+        width: 120px;
+    }
+
+    .title-container {
+        padding: 20px 10px;
+    }
+
+    .title-container h1 {
+        font-size: 28px;
+    }
+
+    .title-container h2 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,68 @@
+/* home.css */
+
+/* Container for rooms */
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Room card styling */
+.room-card {
+    flex: 1 1 calc(33.33% - 40px); /* 3 cards per row */
+    max-width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ensures all cards are responsive */
+.room-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Text inside cards */
+.room-card .text-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.room-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.room-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .room-card {
+        flex: 1 1 calc(50% - 40px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .room-card {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
+
+/* Spacing for mobile view */
+.name {
+    padding: 10px;
+}
